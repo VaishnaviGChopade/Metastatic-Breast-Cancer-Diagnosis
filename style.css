@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+      }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display:flex;
+    position: fixed;
+    
+    width: 100%;
+    padding: .2rem 6%;
+    
+    
+    justify-content:space-around;
+    align-items:center;
+    
+    
+}
+.mylogo{
+    display:flex;
+    position: relative;
+   height: 6rem;
+   width: 5rem;
+   margin-top: 2rem;
+   margin-left: 1.5rem;
+   
+    
+ }
+.navbar{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-top: -3rem;
+    margin-left: 100rem;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);  
+}
+.navbar a{
+    margin-top: -3rem;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    /* margin-right: 1rem; */
+    text-decoration: none;
+    font-weight: 200;
+    color: rgb(9, 97, 103);
+   
+   
+   }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.formbox {
+    /* background-color: rgb(226, 231, 234); */
+    background: linear-gradient(329deg, rgba(156, 160, 161, 0.304) 0%, rgba(161, 172, 171, 0.714) 35%, #abc8cd ,transparent);
+    padding: 20px;
+    border-radius: 5% 0 5% 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 80%;
+    z-index: 100;
+    margin-left: -20rem;
+}   
+
+.formbox h2 {
+    text-align: center;
+    color: #278d8b;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+}
+
+label {
+    margin-bottom: 10px;
+    color : #333;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #090909;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  
+}
+
+button[type="reset"] {
+    background-color: #080808;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.image-container {
+    width: 60%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 4%;
+    margin-left: 8rem;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 35px); }
+    100%   { transform: translate(0, -0px); }    
+  }
+  
+
+  .prediction{
+    margin-bottom: -75rem;
+    margin-left: -56rem;
+    width: 80%;
+    border-radius: 4%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    animation-name: floating_LR;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes floating_LR {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }    
+  }
+
+ 
+  @media (max-width: 1450px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+  .navbar {
+        margin-left: auto;
+    }
+
+    .navbar a {
+        margin-left: 2rem;
+        margin-top: 5rem;
+
+    }
+
+    .container {
+        flex-direction: column;
+    }
+.formbox{
+    margin-left: 0;
+}
+    .formbox, .prediction, .image-container {
+        width: 100%;
+    }
+
+    .image-container img {
+        margin-left: 0;
+    }
+
+    .prediction {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+}
+
+
